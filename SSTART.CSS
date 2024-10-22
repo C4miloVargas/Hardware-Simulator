@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+        margin: 0;
+        padding: 0;
+}
+
+.imagen-contenedor {
+    position: relative; /* Posicionamiento relativo para el contenedor */
+}
+
+.imagen-exterior {
+    width: 100%; /* Ajusta el tamaño de la imagen exterior */
+    height: 100vh; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en la parte inferior */
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    
+}
+
+.imagen-interior {
+    position: absolute; /* Posicionamiento absoluto para la imagen interior */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-60%, -45%); /* Ajusta la posición para centrar */
+    width: 240px; /* Ajusta el tamaño de la imagen interior */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.imagen-interior {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s; /* Transición suave */
+}
+
+.imagen-interior:hover {
+    background-color: rgb(36, 28, 49); /* Color al pasar el ratón */
+}
